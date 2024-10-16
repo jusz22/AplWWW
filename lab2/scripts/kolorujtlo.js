@@ -22,12 +22,11 @@ function openVothcom() {
     window.open("", "Display window","toolbar=no,directories=no,menubar=no");
 }
 
-function clear(form) {
-    form.input.value = 0;
-    form.display.value = 0;
-    decimal = 0;
+function clearBackground() {
+    const el = document.body
+    el.style.removeProperty('background-color')
 }
 
 function changeBackground(hexValue) {
-    document.body.style.backgroundColor += hexValue;
+    document.body.style.backgroundColor = hexValue;
 }

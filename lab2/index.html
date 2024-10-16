@@ -11,9 +11,11 @@
         <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
         <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
         <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+        <script src="scripts/timedate.js" type="text/javascript"></script>
+        <script src="scripts/kolorujtlo.js"></script>
         <title>Moje Hobby</title>
     </head>
-    <body>
+    <body onload="startClock()">
         <header>
             <a href="index.html">
                 <div class="logo">
@@ -56,11 +58,19 @@
                 <section>
                     <h1>Moim hobby są samochody</h1>
                     <p>Na stronie można znaleźć moje ulubione modele samochodów.</p>
-                </section>  
+                </section>
             </main>
         <footer>
-            <p>Contact: <a href="mailto:169250@student.uwm.edu.pl">169250@student.uwm.edu.pl</p></a>
+            <div id="zegarek" class="grouped"></div>
+            <div id="data" class="grouped"></div>
+            <form>
+                <input type="text" name="color" id="color" placeholder="hex value">
+                <input type="button" value="changeBackground" onclick="changeBackground(document.getElementById('color').value);">
+                <input type="button" value="clear" onclick="clearBackground()">
+            </form>
+            <p id="contact">Contact: <a href="mailto:169250@student.uwm.edu.pl">169250@student.uwm.edu.pl</p></a>
             <p>&#169 2024 Jan Juszkiewicz</p>
+
         </footer>
     </body>
 </html>    

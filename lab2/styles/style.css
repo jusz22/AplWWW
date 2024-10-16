@@ -71,10 +71,33 @@ main section {
 }
 
 footer {
+    display: flex;
     background:#313131;
     color: #888888;
     text-align: right;
     padding-right: 10px;
     margin-bottom: 0;
+    height: 50px;
+}
+footer p {
+    padding: 10px;
+    margin: 0;
+    align-self: center;
+    order: 0;
+}
+#contact {
+    margin-left: auto;
+}
+.grouped {
+    order: 1;
+    align-self: center;
+    padding: 10px;
+} 
+#zegarek {
+    margin-left: auto;
+}
+form {
+    padding: 10px;
+    align-self: center;
 }
 
